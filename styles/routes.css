@@ -1,0 +1,163 @@
+.routes {}
+
+.routes-container-wrapper {
+    width: calc((60vw + 20vh) / 1.2);
+    margin: auto;
+}
+
+.routes-container {
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc((60vw + 20vh) / 1.2);
+}
+
+.routes-item {
+    z-index: 2;
+    white-space: normal;
+    position: relative;
+    width: calc((60vw + 20vh) / 1.2);
+    display: inline-block;
+    transition: transform 1s;
+    height: calc((9 / 16) * ((60vw + 20vh) / 1.2) + 80px);
+}
+
+.routes-thumbnail {
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    white-space: normal;
+    position: relative;
+    margin: 10px;
+    width: calc((60vw + 20vh) / 1.2 - 20px);
+    height: calc((9 / 16) * ((60vw + 20vh) / 1.2 - 20px));
+    display: inline-block;
+    transition: transform 1s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.routes-nav {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc((60vw + 20vh) / 1.2);
+}
+
+.routes-nav-wrapper {
+    z-index: 5;
+    width: calc((60vw + 20vh) / 1.2);
+    margin: auto;
+}
+
+.routes-nav-button {
+    margin: 4px;
+    width: calc((60vw + 20vh) / 8);
+    height: calc((9 / 16) * ((60vw + 20vh) / 8));
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.routes-title {
+    position: absolute;
+    left: -8px;
+    padding-right: 1em;
+    padding-left: 1em;
+    top: 4vw;
+    font: 2em 'Neucha', cursive;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.routes-description {
+    padding-right: 1em;
+    padding-left: 1em;
+    position: absolute;
+    left: -8px;
+    top: calc(60% - 10vw);
+    font: 1em 'Shadows Into Light Two', cursive;
+    max-width: calc(((60vw + 20vh)) / 2.5);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.routes-details {
+    position: relative;
+    z-index: 3;
+    top: calc(-1 * (9 / 16) * ((60vw + 20vh) / 1.2 - 40px) - 30px);
+    padding: 10px;
+    font: 1em 'Shadows Into Light Two', cursive;
+    width: calc((60vw + 20vh) / 1.2 - 40px);
+    height: calc((9 / 16) * ((60vw + 20vh) / 1.2 - 40px));
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 200px;
+    overflow: visible;
+}
+.routes-details-toggle-container {
+    z-index: 3;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    font: bold 1.5em 'Amatic SC', cursive;
+    letter-spacing: 0.5em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: -3em;
+    top: calc((9 / 16) * ((60vw + 20vh) / 1.2 - 40px) + 0.8em);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 280px;
+    height: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: none;
+}
+.routes-details-toggle {
+    width: max-content;
+    position: absolute;
+    bottom: 0em;
+    display: block;
+    transform: translateX(-50%);
+    left: 50%;
+    padding: none;
+}
+.routes-details-toggle-container:hover {
+    animation: details-toggle-pullheight 0.2s linear 0s forwards;
+}
+@keyframes routes-pullheight {
+    0% {
+        height: calc((9 / 16) * ((60vw + 20vh) / 1.2) + 80px);
+    }
+
+    100% {
+        height: calc((9 / 16) * ((60vw + 20vh) / 0.6 + 80px + 40px));
+    }
+}
+
+@keyframes routes-pulldown {
+    0% {
+        top: calc(-1 * (9 / 16) * ((60vw + 20vh) / 1.2 - 40px) - 20px);
+    }
+
+    100% {
+        top: -30px;
+    }
+}
+
+@keyframes details-toggle-pullheight {
+    0% {
+        height: 1em;
+    }
+
+    100% {
+        height: 1.5em;
+    }
+}

@@ -1,0 +1,146 @@
+.navigation-bar {
+    pointer-events: none;
+    z-index: 10;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: calc(60vw + 20vh);
+    min-width: 500px;
+    height: calc(100vh + 20px);
+}
+
+
+
+
+.navbar-link-container {
+    position: relative;
+    font: bold 1.5em 'Amatic SC', cursive;
+    width: 80px;
+    height: 1em;
+    padding: 0.4em;
+    display: inline-flex;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+.navbar-link {
+    position: absolute;
+    bottom: 0.2em;
+    display: block;
+}
+.navbar-scrollup-container {
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    font: bold 1.5em 'Amatic SC', cursive;
+    width: 40px;
+    height: 1em;
+    padding: 0.4em;
+    display: inline-flex;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+.navbar-scrollup {
+    position: absolute;
+    top: 0.2em;
+    display: block;
+}
+
+.navbar-link-container:hover {
+    animation: navbar-pullheight 0.2s linear 0s forwards;
+}
+.navbar-scrollup-container:hover {
+    animation: scrollup-pullheight 0.2s linear 0s forwards;
+}
+
+header {
+    padding: none;
+    margin: 0;
+    height: 100vh;
+}
+header {
+    padding: none;
+    margin: none;
+    width: 100%;
+    height: 100vh;
+    background: lightblue url("../img1.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.header-title {
+    padding: 10px;
+    max-width: 80%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    font: bold 4em 'Amatic SC', cursive;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.header-subtitle {
+    padding: 10px;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    text-align: center;
+    font: bold 2em 'Amatic SC', cursive;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-scrolldown-container {
+    padding: 10px;
+    max-width: 80%;
+    position: absolute;
+    bottom: 0em;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    text-align: center;
+    font: bold 1.5em 'Amatic SC', cursive;
+    letter-spacing: 0.5em;
+    height: 1em;
+}
+.header-scrolldown {
+    position: relative;
+    bottom: 0em;
+}
+.header-scrolldown-container:hover {
+    animation: scrolldown-pullheight 0.2s linear 0s forwards;
+}
+
+@keyframes navbar-pullheight {
+    0% {
+        height: 1em;
+    }
+
+    100% {
+        height: 1.5em;
+    }
+}
+
+@keyframes scrolldown-pullheight {
+    0% {
+        height: 1em;
+    }
+
+    100% {
+        height: 1.5em;
+    }
+}
+
+@keyframes scrollup-pullheight {
+    0% {
+        height: 1em;
+    }
+
+    100% {
+        height: 1.5em;
+    }
+}

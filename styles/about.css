@@ -1,0 +1,62 @@
+
+    .about {}
+
+    .about-container-wrapper {
+        align-items: center;
+        justify-content: center;
+        width: calc((60vw + 20vh));
+        margin: auto;
+
+    }
+
+    .about-container {
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        overflow: hidden;
+        width: calc((60vw + 20vh));
+    }
+
+    .about-item {
+        background-position: center;
+        background-size: cover;
+        white-space: normal;
+        position: relative;
+        margin: 20px;
+        width: calc((60vw + 20vh) - 40px);
+        min-height: calc((9 / 16) * ((60vw + 20vh) - 40px));
+        display: block;
+        transition: transform 1s;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        margin-bottom: calc(20px + 3vw);
+        margin-top: calc(20px + 3vw);
+        border-radius: 5px;
+    }
+
+    .about-image {
+        position: absolute;
+        top: 4vh;
+        right: 2vw;
+        width: calc(((60vw + 20vh)) / 3);
+        height: calc(((60vw + 20vh)) / 3);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    .about-title {
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        font: 2em 'Neucha', cursive;
+        width: calc(((60vw + 20vh)) / 2);
+        height: calc(((60vw + 20vh)) / 4);
+    }
+
+    .about-description {
+        position: absolute;
+        top: 8vh;
+        left: 4vw;
+        font: 1em 'Shadows Into Light Two', cursive;
+        width: calc(((60vw + 20vh)) / 2);
+    }
+

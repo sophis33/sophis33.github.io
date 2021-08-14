@@ -1,0 +1,81 @@
+.contact {}
+
+.contact-wrapper {
+    align-items: center;
+    justify-content: center;
+    width: calc((60vw + 20vh) /1.2);
+    margin: auto;
+    white-space: nowrap;
+}
+
+.contact-email {
+    display: inline-block;
+    min-width: calc((60vw + 20vh) / 1.2 / 3 * 2 - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+}
+
+.contact-email-field {
+    font-size: 1.2em;
+    position: relative;
+    margin: 10px;
+    min-width: calc((60vw + 20vh) / 1.2 / 3 * 2 - 40px);
+}
+
+.contact-email-field-description {
+    font: 1.2em 'Waiting for the Sunrise', cursive;
+}
+
+.contact-email-field-content {
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border-width: 0px;
+    width: calc((60vw + 20vh) / 1.2 / 3 * 2 - 40px);
+}
+
+.contact-email-send {
+    margin: 10px;
+    position: relative;
+    right: calc(-1 * (60vw + 20vh) / 1.2 / 2.8);
+    border-radius: 20px;
+    border-width: 0px;
+    width: calc((60vw + 20vh) / 1.2 / 4 - 40px);
+    text-align: center;
+    font: 1.2em 'Waiting for the Sunrise', cursive;
+}
+
+.contact-container-wrapper {
+    display: inline-block;
+    white-space: normal;
+    width: calc((60vw + 20vh) / 1.2 / 3 - 20px);
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+.contact-item {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-size: cover;
+}

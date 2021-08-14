@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Panama",
+        "description": "Un bel viaggio a Panama è quello che ci vuole per te!<br> scropri le bellezze di questo luogo esotico.",
+        "image": "img1.jpg",
+        "details": "questi sono i dettagli"
+    },
+    {
+        "title": "2",
+        "description": "Computer Architecture",
+        "image": "img1.jpg",
+        "details": "questi sono i dettagli"
+    },
+    {
+        "title": "3",
+        "description": "Computer Architecture",
+        "image": "img1.jpg",
+        "details": "questi sono i dettagli"
+
+    },
+    {
+        "title": "4",
+        "description": "Computer Architecture",
+        "image": "img1.jpg",
+        "details": "questi sono i dettagli"
+
+    }
+]

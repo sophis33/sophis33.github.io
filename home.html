@@ -1,0 +1,147 @@
+<!-- doctype html -->
+<html>
+
+<head>
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/news.css">
+    <link rel="stylesheet" type="text/css" href="styles/routes.css">
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Neucha&family=Nothing+You+Could+Do&family=Shadows+Into+Light+Two&family=Waiting+for+the+Sunrise&display=swap"
+          rel="stylesheet">
+
+<body>
+    <div id="page">
+
+        <nav class="navigation-bar" id="navigation-bar">
+            <ul class="topnavbar">
+                <a class="smoothscroll" href="#news">
+                    <li class="navbar-link-container weak top">
+                        <div class="navbar-link">NEWS</div>
+                    </li>
+                </a>
+                <a class="smoothscroll" href="#routes">
+                    <li class="navbar-link-container strong top">
+                        <div class="navbar-link">ROUTES</div>
+                    </li>
+                </a>
+                <a class="smoothscroll" href="#about">
+                    <li class="navbar-link-container weak top">
+                        <div class="navbar-link">ABOUT</div>
+                    </li>
+                </a>
+                <a class="smoothscroll" href="#contact">
+                    <li class="navbar-link-container strong top">
+                        <div class="navbar-link">CONTACT</div>
+                    </li>
+                </a>
+            </ul>
+            <a class="smoothscroll" href="#header">
+                <li class="navbar-scrollup-container strong bottom">
+                    <div class="navbar-scrollup">UP</div>
+                </li>
+            </a>
+        </nav>
+
+        <header class="header" id="header">
+            <div class="header-title strong left">SOPHIS' ROUTES</div>
+            <div class="header-subtitle strong right">check out my latest news</div>
+            <a class="smoothscroll" href="#news">
+                <div class="header-scrolldown-container weak bottom">
+                    <div class="header-scrolldown">DISCOVER</div>
+                </div>
+            </a>
+        </header>
+
+        <div class="content" id="content">
+
+            <section class="news weak" id="news">
+                <div class="section-title">NEWS</div>
+                <div class="news-container-wrapper" id="news-container-wrapper">
+                    <div class="news-container" id="news-container">
+                    </div>
+                </div>
+                <div class="news-nav-wrapper" id="news-nav-wrapper">
+                    <div class="news-nav" id="news-nav">
+                    </div>
+                </div>
+                <div class="arrow-container left strong" onclick="newsscrollleft()">
+                    <div class="arrow ">
+                        < </div>
+                    </div>
+                    <div class="arrow-container right strong" onclick="newsscrollright()">
+                        <div class="arrow "> > </div>
+                    </div>
+            </section>
+
+            <section class="routes strong" id="routes">
+                <div class="section-title">ROUTES</div>
+                <div class="routes-container-wrapper" id="routes-container-wrapper">
+                    <div class="routes-container" id="routes-container">
+                    </div>
+                </div>
+                <div class="routes-nav-wrapper" id="routes-nav-wrapper">
+                    <div class="routes-nav" id="routes-nav">
+                    </div>
+                </div>
+                <div class="arrow-container left weak" onclick="routesscrollleft()">
+                    <div class="arrow ">
+                        < </div>
+                    </div>
+                    <div class="arrow-container right weak" onclick="routesscrollright()">
+                        <div class="arrow "> > </div>
+                    </div>
+            </section>
+
+            <section class="about weak" id="about">
+                <div class="section-title">ABOUT ME</div>
+                <div class="about-container-wrapper" id="about-container-wrapper">
+                    <div class="about-container" id="about-container">
+                    </div>
+                </div>
+                <div class="about-nav-wrapper" id="about-nav-wrapper">
+                    <div class="about-nav" id="about-nav">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact strong" id="contact">
+                <div class="section-title">CONTACT ME</div>
+                <div class="contact-wrapper" id="contact-wrapper">
+                    <div class="contact-email translucid weak" id="contact-email">
+                        <form method="post" name="contact_form" action="contact-form-handler.php">
+                            <div class="contact-email-field">
+                                <div class="contact-email-field-description">Your Name:</div>
+                                <input class="contact-email-field-content" type="text" name="name"><br>
+                            </div>
+                            <div class="contact-email-field">
+                                <div class="contact-email-field-description">Email Address:</div>
+                                <input class="contact-email-field-content" type="text" name="email"><br>
+                            </div>
+                            <div class="contact-email-field">
+                                <div class="contact-email-field-description">Message:</div>
+                                <textarea rows="5" class="contact-email-field-content" name="message"></textarea>
+                            </div>
+                            <input class="contact-email-send translucid strong type=" submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="contact-container-wrapper translucid weak" id="contact-container-wrapper">
+                        <div class="contact-container" id="contact-container">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/news.js"></script>
+<script type="text/javascript" src="scripts/routes.js"></script>
+<script type="text/javascript" src="scripts/about.js"></script>
+<script type="text/javascript" src="scripts/contact.js"></script>

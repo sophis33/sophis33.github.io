@@ -1,0 +1,64 @@
+.news {
+    
+}
+
+.news-container-wrapper {
+    width: calc((60vw + 20vh) / 1.2);
+    margin: auto;
+}
+
+.news-container {
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc((60vw + 20vh) / 1.2);
+}
+
+.news-item {
+    white-space: normal;
+    position: relative;
+    margin: 10px;
+    width: calc((60vw + 20vh) / 2.4 - 20px);
+    min-height: calc((60vw + 20vh) / 2.4 - 20px);
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+}
+
+.news-title {
+    font: 2em 'Neucha', cursive;
+    display: block;
+    text-align: center;
+}
+
+.news-description {
+    white-space: normal;
+    display: block;
+    padding: 10px;
+    font: 1em 'Shadows Into Light Two', cursive;
+    ;
+}
+
+.news-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc((60vw + 20vh) / 2);
+}
+
+.news-nav-wrapper {
+    width: calc((60vw + 20vh) / 1.2);
+    margin: auto;
+}
+
+.news-nav-button {
+    margin: 8px;
+    width: calc((60vw + 20vh) / 40);
+    height: calc((60vw + 20vh) / 40);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

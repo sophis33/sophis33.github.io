@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: none;
+    
+}
+header {
+    margin: 0%;
+    padding: none;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    min-width: 400px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.weak {
+    background-color: rgba(255, 240, 230, 1);
+    color: rgba(255, 80, 80, 1);
+}
+
+.strong {
+    background-color: rgba(255, 80, 80, 1);
+    color: rgba(255, 240, 230, 1);
+}
+
+.translucid {
+    opacity: 0.8;
+}
+.smoothscroll {
+    pointer-events: all;
+}
+section {
+    position: relative;
+    min-height: 20vh;
+    padding-top: calc(5vh + 1vw);
+    padding-bottom: calc(5vh + 1vw);
+}
+
+.content {
+    margin: auto;
+    display: block;
+    width: calc(60vw + 20vh);
+}
+
+.section-title {
+    padding: 20px;
+    text-align: center;
+    font: bold 3em 'Amatic SC', cursive;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.arrow-container {
+    height: calc((60vw + 20vh) / 6);
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    line-height: calc((60vw + 20vh)) / 6;
+    width: calc((60vw + 20vh) / 20);
+    transform: translate(0%, -50%);
+    top: 50%;
+}
+
+.arrow-container:hover {
+    animation: arrow-pullwidth 0.2s linear 0s forwards;
+}
+
+@keyframes arrow-pullwidth {
+    0% {
+        width: calc((60vw + 20vh) / 20);
+    }
+
+    100% {
+        width: calc((60vw + 20vh) / 16);
+    }
+}
+
+.arrow {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font: bold 3em 'Amatic SC', cursive;
+}
+
+
+
+.left {
+    left: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.top {
+    top: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bottom {
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
