@@ -66,7 +66,6 @@ header {
     height: 100%;
     background: lightblue url("../background.jpeg") no-repeat fixed center;
     background-size: cover;
-    min-width: calc((60vw + 20vh))
 }
 
 .header-title {
