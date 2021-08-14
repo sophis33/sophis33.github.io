@@ -69,7 +69,7 @@ header {
     margin: none;
     width: 100%;
     height: 100vh;
-    background: lightblue url("../img1.jpg") no-repeat fixed center;
+    background: lightblue url("../background.jpeg") no-repeat fixed center;
     background-size: cover;
 }
 
