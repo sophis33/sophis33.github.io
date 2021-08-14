@@ -89,27 +89,27 @@ section {
 
 
 .left {
-    left: 0;
+    left: 0em;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .right {
-    right: 0;
+    right: 0em;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .top {
-    top: 0;
+    top: 0em;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bottom {
-    bottom: 0;
+    bottom: 0em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
