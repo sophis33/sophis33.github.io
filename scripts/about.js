@@ -1,12 +1,11 @@
 /* ABOUT */
 let aboutnumber;
 var aboutlist;
-readTextFile("/jsons/about.json", function (text) {
-    aboutlist = JSON.parse(text);
-    console.log(newslist);
-});
 
-function startabout() {
+async function startabout() {
+    const response = await fetch('jsons/about.json');
+    aboutlist = await response.json();
+
     aboutnumber = aboutlist.length;
     for (i = 0; i < aboutnumber; i++) {
         document.getElementById("about-container").innerHTML += "<div class = 'about-item translucid strong' id = 'about-item" + i + "'></div>";

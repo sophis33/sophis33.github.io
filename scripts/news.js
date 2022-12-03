@@ -3,13 +3,10 @@
 var newslist;
 let newsnumber;
 
-readTextFile("jsons/news.json", function (text) {
-    newslist = JSON.parse(text);
-    console.log(newslist);
-});
-
-
-function startnews() {
+async function startnews() {
+    const response = await fetch('jsons/news.json');
+    newslist = await response.json();    
+   // outputs a javascript object from the parsed json
     newsnumber = newslist.length;
     var i;
     for (i = 0; i < newsnumber; i++) {

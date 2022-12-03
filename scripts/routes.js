@@ -1,13 +1,12 @@
 /* ROUTES */
+let details = false;
 let routesnumber;
 var routeslist;
-let  details = false;
-readTextFile("/jsons/routes.json", function (text) {
-    routeslist = JSON.parse(text);
-    console.log(newslist);
-});
 
-function startroutes() {
+async function startroutes() {
+    const response = await fetch('jsons/routes.json');
+    routeslist = await response.json();
+
     routesnumber = routeslist.length;
     for (i = 0; i < routesnumber; i++) {
         document.getElementById("routes-container").innerHTML += "<div class = 'routes-item' id = 'routes-item" + i + "'></div>";
